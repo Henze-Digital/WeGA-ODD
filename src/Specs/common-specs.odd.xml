@@ -55,9 +55,16 @@
         <p xml:lang="en">further verbs that are used by TEI: contain, define, document, group, indicate, provide, specify, signify, supply</p>
         </div>-->
     
+    <specGrp xml:id="wega-modules">
+        <moduleSpec ident="wega.core.module">
+            <desc xml:lang="de" versionDate="2022-11-08">Modul für WeGA-spezifische Ergänzungen</desc>
+            <desc xml:lang="en" versionDate="2017-11-08">Module for WeGA specific additions</desc>
+        </moduleSpec>
+    </specGrp>
+    
     <specGrp xml:id="wega-patterns">
         
-        <dataSpec ident="wega.persons.pointer">
+        <dataSpec ident="wega.persons.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Personen-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for person IDs within the WeGA</desc>
             <content>
@@ -65,7 +72,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.works.pointer">
+        <dataSpec ident="wega.works.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Werk-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for work IDs within the WeGA</desc>
             <content>
@@ -73,7 +80,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.works.prefixed.pointer">
+        <dataSpec ident="wega.works.prefixed.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2020-03-23">definiert das Muster für Werk-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2020-03-23">defines the possible attribute values for work IDs within the WeGA</desc>
             <content>
@@ -81,7 +88,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.writings.pointer">
+        <dataSpec ident="wega.writings.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Schriften-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for writing IDs within the WeGA</desc>
             <content>
@@ -89,7 +96,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.letters.pointer">
+        <dataSpec ident="wega.letters.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Brief-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for letter IDs within the WeGA</desc>
             <content>
@@ -97,7 +104,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.news.pointer">
+        <dataSpec ident="wega.news.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für News-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for news IDs within the WeGA</desc>
             <content>
@@ -105,7 +112,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.diaries.pointer">
+        <dataSpec ident="wega.diaries.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Tagebuch-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for diary IDs within the WeGA</desc>
             <content>
@@ -113,7 +120,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.var.pointer">
+        <dataSpec ident="wega.var.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Varia-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for varia IDs within the WeGA</desc>
             <content>
@@ -121,7 +128,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.orgs.pointer">
+        <dataSpec ident="wega.orgs.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Körperschaften-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for organisation IDs within the WeGA</desc>
             <content>
@@ -129,7 +136,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.documents.pointer">
+        <dataSpec ident="wega.documents.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Dokumenten-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for document IDs within the WeGA</desc>
             <content>
@@ -137,7 +144,7 @@
             </content>
         </dataSpec>
        
-        <dataSpec ident="wega.biblio.pointer">
+        <dataSpec ident="wega.biblio.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Biblio-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for biblio IDs within the WeGA</desc>
             <content>
@@ -145,7 +152,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.places.pointer">
+        <dataSpec ident="wega.places.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Orts-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for places IDs within the WeGA</desc>
             <content>
@@ -153,7 +160,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.sources.pointer">
+        <dataSpec ident="wega.sources.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">definiert das Muster für Quellen-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2017-08-29">defines the possible attribute values for source IDs within the WeGA</desc>
             <content>
@@ -161,7 +168,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.addenda.pointer">
+        <dataSpec ident="wega.addenda.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2018-11-16">definiert das Muster für Addenda-Dokument-IDs innerhalb der WeGA</desc>
             <desc xml:lang="en" versionDate="2018-11-16">defines the possible attribute values for addenda document IDs within the WeGA</desc>
             <content>
@@ -169,7 +176,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.internal.pointer">
+        <dataSpec ident="wega.internal.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">fasst die potentiellen internen Verweise zusammen</desc>
             <desc xml:lang="en" versionDate="2017-08-29">groups together the possible internal linkable patterns</desc>
             <content>
@@ -191,7 +198,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.personsPlus.pointer">
+        <dataSpec ident="wega.personsPlus.pointer" mode="add" module="wega.core.module">
             <desc xml:lang="de" versionDate="2017-08-29">fasst die potentiellen internen Verweise zu Personen und Körperschaften zusammen</desc>
             <desc xml:lang="en" versionDate="2017-08-29">groups together the possible internal pointers to persons and organisations</desc>
             <content>
@@ -202,7 +209,7 @@
             </content>
         </dataSpec>
         
-        <macroSpec ident="pnd.pattern" mode="add">
+        <macroSpec ident="pnd.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <!-- see https://www.wikidata.org/wiki/Property:P227 "format as a regular expression" -->
@@ -211,7 +218,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="viaf.pattern" mode="add">
+        <macroSpec ident="viaf.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <!-- see https://www.wikidata.org/wiki/Property:P214 "format as a regular expression" -->
@@ -220,7 +227,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="geonames.pattern" mode="add">
+        <macroSpec ident="geonames.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <!-- see https://www.wikidata.org/wiki/Property:P1566 "format as a regular expression" -->
@@ -229,7 +236,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="bd.pattern" mode="add">
+        <macroSpec ident="bd.pattern" mode="add" module="wega.core.module">
             <!-- Bach Digital -->
             <content>
                 <rng:data type="string">
@@ -238,7 +245,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="rism.pattern" mode="add">
+        <macroSpec ident="rism.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <rng:param name="pattern">[A-Z]{1,3}-[A-ZČŠŚŻŁÄÖÜ][A-Za-zäöüÄÖÜ]*</rng:param>
@@ -247,7 +254,7 @@
         </macroSpec>
         
         <!-- Weber-Schriften-Nummer der WeGA -->
-        <macroSpec ident="WeS.pattern" mode="add">
+        <macroSpec ident="WeS.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <rng:param name="pattern">18[12]\d-WeS-\d{2}</rng:param>
@@ -256,7 +263,7 @@
         </macroSpec>
         
         <!-- Kaiser Schriften -->
-        <macroSpec ident="KS.pattern" mode="add">
+        <macroSpec ident="KS.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <rng:param name="pattern">\d{1,3}</rng:param>
@@ -264,7 +271,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="pages.pattern" mode="add">
+        <macroSpec ident="pages.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:choice>
                     <rng:data type="string">
@@ -291,7 +298,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="thematicCom.pattern" mode="add">
+        <macroSpec ident="thematicCom.pattern" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <rng:param name="pattern">A09\d{4}</rng:param>
@@ -299,7 +306,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="thematicCom.target" mode="add">
+        <macroSpec ident="thematicCom.target" mode="add" module="wega.core.module">
             <content>
                 <rng:data type="string">
                     <rng:param name="pattern">wega:A09\d{4}</rng:param>
@@ -307,10 +314,28 @@
             </content>
         </macroSpec>
         
+        <macroSpec ident="dracor.einakter.id.pattern" mode="add" module="wega.core.module">
+            <content>
+                <rng:data type="string">
+                    <!-- see https://github.com/dracor-org/einakter/ -->
+                    <rng:param name="pattern">ein[0-9]{6}</rng:param>
+                </rng:data>
+            </content>
+        </macroSpec>
+        
+        <macroSpec ident="wikidata.id.pattern" mode="add" module="wega.core.module">
+            <content>
+                <rng:data type="string">
+                    <!-- see https://www.wikidata.org/wiki/Q43649390 -->
+                    <rng:param name="pattern">Q[1-9]\d*</rng:param>
+                </rng:data>
+            </content>
+        </macroSpec>
+        
     </specGrp>
     
     <specGrp xml:id="wega-lists">
-        <macroSpec ident="staffSignatures.list" mode="add">
+        <macroSpec ident="staffSignatures.list" mode="add" module="wega.core.module">
             <content>
                 <rng:choice>
                     <rng:value>PS</rng:value><a:documentation>Peter Stadler</a:documentation><!-- pstadler -->
@@ -352,7 +377,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="WeGA_keywords.list" mode="add">
+        <macroSpec ident="WeGA_keywords.list" mode="add" module="wega.core.module">
             <content>
                 <rng:choice>
                     <rng:value>release</rng:value>
@@ -371,7 +396,7 @@
             </content>
         </macroSpec>
         
-        <macroSpec ident="marcRelator.list" mode="add">
+        <macroSpec ident="marcRelator.list" mode="add" module="wega.core.module">
             <desc versionDate="2014-04-02" xml:lang="en"><ref target="http://www.loc.gov/marc/relators/relaterm.html">MARC Code List for Relators</ref>, constrained for use in the WeGA.</desc>
             <content>
                 <rng:choice>
@@ -395,7 +420,7 @@
     
     <specGrp xml:id="wega-common-atts">
         <!-- common macros for TEI and MEI -->
-        <macroSpec ident="wega.data.temporal.iso" mode="add">
+        <macroSpec ident="wega.data.temporal.iso" mode="add" module="wega.core.module">
             <desc versionDate="2014-04-22" xml:lang="en">A replacement for the TEI macro data.temporal.iso which allows only date (YYYY-MM-DD) and gYear (YYYY).</desc>
             <desc versionDate="2014-04-22" xml:lang="de">WeGA-Ersatz für das TEI Makro data.temporal.iso mit der Einschränkung auf date (YYYY-MM-DD) und gYear (YYYY).</desc>
             <content>
@@ -406,7 +431,7 @@
             </content>
         </macroSpec>
 
-        <dataSpec ident="wega.place.type" mode="add">
+        <dataSpec ident="wega.place.type" mode="add" module="wega.core.module">
             <desc versionDate="2020-12-02" xml:lang="en">Geschlossene Liste von Werten für WeGA Ortstypen, genutzt von tei:placeName und mei:geogName</desc>
             <desc versionDate="2020-12-02" xml:lang="de">Closed list of values for WeGA place types, used by tei:placeName and mei:geogName</desc>
             <content>
@@ -451,7 +476,7 @@
             </content>
         </dataSpec>
         
-        <classSpec type="atts" ident="att.wega.rend" mode="add">
+        <classSpec type="atts" ident="att.wega.rend" mode="add" module="wega.core.module">
             <desc versionDate="2014-06-16" xml:lang="en">provides a common @rend and @n attribute for the encoding with MEI and TEI.</desc>
             <desc versionDate="2014-06-16" xml:lang="de">Stellt ein generisches @rend- und @n-Attribut zur Verwendung in MEI und TEI Schemata zu Verfügung.</desc>
             <constraintSpec scheme="schematron" ident="underline-n">
@@ -523,6 +548,29 @@
                 </attDef>
             </attList>
         </classSpec>
+        
+        <classSpec type="atts" ident="att.wega.rdfa" mode="add" module="wega.core.module">
+            <desc versionDate="2022-10-26" xml:lang="en">provides (a subset of) RDFa attributes, 
+                see <ptr target="https://www.w3.org/TR/rdfa-lite/#vocab-typeof-and-property"/>.</desc>
+            <desc versionDate="2022-10-26" xml:lang="de">Stellt (eine Untermenge von) RDFa Attribute zur Verfügung, 
+                siehe <ptr target="https://www.w3.org/TR/rdfa-lite/#vocab-typeof-and-property"/>.</desc>
+            <attList>
+                <attDef ident="typeof" mode="add">
+                    <desc versionDate="2022-10-26" xml:lang="en">defines the type of the subject.</desc>
+                    <desc versionDate="2022-10-26" xml:lang="de">bestimmt den Typ des Subjekts.</desc>
+                    <datatype>
+                        <dataRef key="teidata.word"/>
+                    </datatype>
+                </attDef>
+                <attDef ident="vocab" mode="add">
+                    <desc versionDate="2022-10-26" xml:lang="en">an IRI that defines the mapping to use when a TERM is referenced in an attribute value.</desc>
+                    <desc versionDate="2022-10-26" xml:lang="de">legt einen Standard-Namensraum, also das benutzte Vokabular, fest.</desc>
+                    <datatype>
+                        <dataRef key="teidata.word"/>
+                    </datatype>
+                </attDef>
+            </attList>
+        </classSpec>
     </specGrp>
     
     <specGrp xml:id="wega-tei-atts">
@@ -532,7 +580,7 @@
             </content>
         </macroSpec>
         
-        <classSpec type="atts" ident="att.docStatus" mode="replace">
+        <classSpec type="atts" ident="att.docStatus" mode="replace" module="tei">
             <desc versionDate="2013-11-11" xml:lang="en">provides attributes for use on metadata elements describing the status of a document.</desc>
             <desc versionDate="2013-11-11" xml:lang="de">stellt Attribute für den Gebrauch von Metadaten-Elementen, die den Status eines Dokuments beschreiben.</desc>
             <attList>
@@ -658,6 +706,44 @@
             </attList>
         </classSpec>
         
+        <!-- 
+            Added here only to overwrite the constraintSpec "only_1_ODD_source" 
+            which causes those pesky "SXWN9000: The child axis starting at an attribute node will never select anything" warnings
+            This can be removed eventually when https://github.com/TEIC/TEI/pull/2287 has been accepted
+        -->
+        <classSpec module="tei" type="atts" ident="att.global.source" mode="change">
+            <attList>
+                <attDef ident="source" usage="opt" mode="change">
+                    <desc versionDate="2010-05-09" xml:lang="en">specifies the source from which some aspect of
+                        this element is drawn.</desc>
+                    <desc versionDate="2019-09-18" xml:lang="ja">この要素の何らかの側面を示すソースを指定する。</desc>
+                    <datatype maxOccurs="unbounded">
+                        <dataRef key="teidata.pointer"/>
+                    </datatype>
+                    <constraintSpec scheme="schematron" ident="only_1_ODD_source" mode="replace">
+                        <constraint>
+                            <sch:rule context="tei:*[@source]">
+                                <sch:let name="srcs" value="tokenize( normalize-space(@source),'&#x20;')"/>
+                                <sch:report test="( self::tei:classRef
+                                    | self::tei:dataRef
+                                    | self::tei:elementRef
+                                    | self::tei:macroRef
+                                    | self::tei:moduleRef
+                                    | self::tei:schemaSpec )
+                                    and
+                                    $srcs[2]">
+                                    When used on a schema description element (like
+                                    <sch:value-of select="name(.)"/>), the @source attribute
+                                    should have only 1 value. (This one has <sch:value-of
+                                        select="count($srcs)"/>.)
+                                </sch:report>
+                            </sch:rule>
+                        </constraint>
+                    </constraintSpec>
+                </attDef>
+            </attList>
+        </classSpec>
+        
         <classSpec type="atts" ident="att.sortable" module="tei" mode="delete"/>
         <classSpec type="atts" ident="att.datable.iso" module="tei" mode="delete"/>
         <classSpec type="atts" ident="att.datable.custom" module="tei" mode="delete"/>
@@ -668,7 +754,7 @@
     <specGrp xml:id="wega-tei-macros"/>
     
     <specGrp xml:id="wega-datatypes">
-        <dataSpec ident="wegadata.textAlignment" mode="add">
+        <dataSpec ident="wegadata.textAlignment" mode="add" module="wega.core.module">
             <desc>A closed list of values to be used with a <att>rend</att> attribute on e.g. <gi>dateline</gi>.</desc>
             <content>
                 <valList type="closed">
@@ -692,7 +778,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="wega.biblio.types" mode="add">
+        <dataSpec ident="wega.biblio.types" mode="add" module="wega.core.module">
             <desc>A closed list of values to be used with a <att>type</att> attribute on e.g. <gi>biblStruct</gi>.</desc>
             <content>
                 <valList type="closed">
@@ -744,7 +830,7 @@
             </content>
         </dataSpec>
         
-        <dataSpec ident="teidata.language" mode="change">
+        <dataSpec ident="teidata.language" mode="change" module="tei">
             <desc>A closed list of values to be used with a <att>ident</att> attribute on e.g. <gi>language</gi>.</desc>
             <content>
                 <valList type="closed">
@@ -772,13 +858,65 @@
                         <desc versionDate="2021-08-10" xml:lang="en">Latin</desc>
                         <desc versionDate="2021-08-10" xml:lang="de">Latein</desc>
                     </valItem>
+                    <valItem ident="pl">
+                        <desc versionDate="2022-11-02" xml:lang="en">Polish</desc>
+                        <desc versionDate="2022-11-02" xml:lang="de">Polnisch</desc>
+                    </valItem>
+                    <valItem ident="cs">
+                        <desc versionDate="2022-11-02" xml:lang="en">Czech</desc>
+                        <desc versionDate="2022-11-02" xml:lang="de">Tschechisch</desc>
+                    </valItem>
+                    <valItem ident="hu">
+                        <desc versionDate="2022-11-02" xml:lang="en">Hungarian</desc>
+                        <desc versionDate="2022-11-02" xml:lang="de">Ungarisch</desc>
+                    </valItem>
+                    <valItem ident="uk">
+                        <desc versionDate="2022-11-02" xml:lang="en">Ukrainian</desc>
+                        <desc versionDate="2022-11-02" xml:lang="de">Ukrainisch</desc>
+                    </valItem>
+                </valList>
+            </content>
+        </dataSpec>
+        
+        <dataSpec ident="wegadata.geonames.featureClasses" mode="add" module="wega.core.module">
+            <desc>A closed list of GeoNames feature classes taken from <ptr target="https://www.geonames.org/export/codes.html"/></desc>
+            <content>
+                <valList type="closed">
+                    <valItem ident="P">
+                        <gloss versionDate="2022-10-24" xml:lang="en">city, village, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Stadt, Ort, …</gloss>
+                    </valItem>
+                    <valItem ident="A">
+                        <gloss versionDate="2022-10-24" xml:lang="en">country, state, region, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Land, Staat, Region, …</gloss>
+                    </valItem>
+                    <valItem ident="H">
+                        <gloss versionDate="2022-10-24" xml:lang="en">stream, lake, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Fluss, See, …</gloss>
+                    </valItem>
+                    <valItem ident="L">
+                        <gloss versionDate="2022-10-24" xml:lang="en">parks, area, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Park, Anlage, …</gloss>
+                    </valItem>
+                    <valItem ident="S">
+                        <gloss versionDate="2022-10-24" xml:lang="en">spot, building, farm</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Gebäude, Farm, …</gloss>
+                    </valItem>
+                    <valItem ident="T">
+                        <gloss versionDate="2022-10-24" xml:lang="en">mountain, hill, rock, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Berg, Hügel, …</gloss>
+                    </valItem>
+                    <valItem ident="V">
+                        <gloss versionDate="2022-10-24" xml:lang="en">forest, heath, …</gloss>
+                        <gloss versionDate="2022-10-24" xml:lang="de">Wald, Heide, …</gloss>
+                    </valItem>
                 </valList>
             </content>
         </dataSpec>
     </specGrp>
     
     <specGrp xml:id="wega-classes">
-        <classSpec ident="model.damagePart" type="model" mode="add">
+        <classSpec ident="model.damagePart" type="model" mode="add" module="wega.core.module">
             <desc versionDate="2013-11-11" xml:lang="en">groups elements which can be used within a damage element.</desc>
             <desc versionDate="2013-11-11" xml:lang="de">gruppiert Elemente, die innerhalb eines damage-Elements verwendet werden können.</desc>
         </classSpec>
@@ -807,7 +945,7 @@
             <desc versionDate="2016-09-30" xml:lang="en">Warnings for attribute values with leading or trailing whitespace</desc>
             <desc versionDate="2016-09-30" xml:lang="de">Warnung vor Leerzeichen am Beginn oder Ende eines Attributs</desc>
             <constraint>
-                <sch:rule context="*">
+                <sch:rule context="*[@*]">
                     <sch:report test="some $i in @* satisfies string-length(normalize-unicode(normalize-space(replace($i, '&#160;|&#8194;|&#8195;|&#8201;', ' ')))) ne string-length($i)">There is some whitespace here at the beginning or end of some attribute value.</sch:report>
                 </sch:rule>
             </constraint>
@@ -841,6 +979,13 @@
                 </sch:rule>
             </constraint>
         </constraintSpec>
+        <constraintSpec scheme="schematron" ident="anonymus-id">
+            <constraint>
+                <sch:rule context="*[@key|@codedval]">
+                    <sch:report test="(@key | @codedval) = 'A007979'">Please do not link to the anonymus ID.</sch:report>
+                </sch:rule>
+            </constraint>
+        </constraintSpec>
     </specGrp>
     
     <specGrp xml:id="wega-styleguides">
@@ -855,7 +1000,7 @@
     </specGrp>
     
     <specGrp xml:id="wega-element-additions">
-        <elementSpec ident="characterName" mode="add">
+        <elementSpec ident="characterName" mode="add" module="wega.core.module">
             <gloss versionDate="2013-11-11" xml:lang="en">characterName</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">name of a role or character in a work.</desc>
             <gloss versionDate="2013-11-11" xml:lang="de">Name eines Charakters</gloss>
@@ -879,7 +1024,7 @@
             </attList>
         </elementSpec>
         
-        <elementSpec ident="workName" mode="add">
+        <elementSpec ident="workName" mode="add" module="wega.core.module">
             <desc versionDate="2013-11-11" xml:lang="en">name of a work (e.g. composition)</desc>
             <desc versionDate="2013-11-11" xml:lang="de">Name des Werkes (z.B. Komposition)</desc>
             <classes>
@@ -900,7 +1045,7 @@
             </attList>
         </elementSpec>
         
-        <elementSpec ident="footNote" mode="add">
+        <elementSpec ident="footNote" mode="add" module="wega.core.module">
             <equiv name="footNote" filter="WeGA-equiv.xsl" mimeType="text/xsl"/>
             <desc versionDate="2013-11-11" xml:lang="en">Special element for the transcription of a footnote (not necessarily to be rendered as such)</desc>
             <desc versionDate="2013-11-11" xml:lang="de">Spezielles Element für die Transkription einer Fußnote (die nicht unbedingt als solche dargestellt werden)</desc>
@@ -1362,7 +1507,17 @@
                 <memberOf key="att.naming" mode="delete"/>
                 <memberOf key="att.canonical" mode="delete"/>
                 <memberOf key="att.global" mode="delete"/>
+                <memberOf key="att.datable" mode="delete"/>
             </classes>
+            <constraintSpec scheme="schematron" ident="author-abb">
+                <desc versionDate="2022-05-31" xml:lang="en">constrain the attribute <att>full</att> to occur only on <gi>author</gi> elements within <gi>biblStruct</gi>.</desc>
+                <desc versionDate="2022-05-31" xml:lang="de">erlaube das <att>full</att>-Attribut nur an <gi>author</gi>-Elementen innerhalb von <gi>biblStruct</gi>.</desc>
+                <constraint>
+                    <sch:rule context="tei:author[@full]">
+                        <sch:assert test="ancestor::tei:biblStruct">The full-attribute on author may only be applied within biblStruct.</sch:assert>
+                    </sch:rule>
+                </constraint>
+            </constraintSpec>
             <attList>
                 <attDef ident="key" mode="add" usage="opt">
                     <desc versionDate="2013-11-11" xml:lang="en">provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.</desc>
@@ -1371,7 +1526,6 @@
                         <dataRef key="wega.personsPlus.pointer"/>
                     </datatype>
                 </attDef>
-                <attRef class="att.global" name="xml:id"/>
                 <attDef ident="sameAs" mode="add" usage="opt">
                     <desc versionDate="2013-11-11" xml:lang="en">points to an element that is the same as the current element.</desc>
                     <desc versionDate="2013-11-11" xml:lang="de">zeigt auf ein Element, dass das gleiche ist, wie das aktuelle Element.</desc>
@@ -1386,21 +1540,21 @@
                         </constraint>
                     </constraintSpec>
                 </attDef>
-                <attRef class="att.global.responsibility" name="cert"/>
-                <attDef ident="role" mode="add" usage="rec">
-                    <desc versionDate="2013-11-11" xml:lang="en">may be used to specify further information about the entity referenced by this name, for example the occupation of a person, or the status of a place.</desc>
-                    <desc versionDate="2013-11-11" xml:lang="de">kann verwendet werden, um weitere Informationen, die über die Einheit unter diesem Namen referenziert werden, anzugeben, z. B. der Beruf einer Person, oder der Status eines Ortes.</desc>
+                <!--<attRef class="att.personal" name="full"/>--><!-- That does not work for biblio?!? -->
+                <attDef ident="full" mode="add" usage="opt">
+                    <desc versionDate="2022-05-31" xml:lang="en">indicates whether the author name is given in full.</desc>
+                    <desc versionDate="2022-05-31" xml:lang="de">zeigt an, ob der Name des/der Autor:in vollständig angegeben ist.</desc>
                     <valList type="closed">
-                        <valItem ident="composer">
-                            <desc versionDate="2013-11-11" xml:lang="en">composer of a musical work.</desc>
-                            <desc versionDate="2013-11-11" xml:lang="de">Komponist eines musikalischen Werkes.</desc>
-                        </valItem>
-                        <valItem ident="librettist">
-                            <desc versionDate="2013-11-11" xml:lang="en">librettist of a musical work.</desc>
-                            <desc versionDate="2013-11-11" xml:lang="de">Librettist eines musikalischen Werkes.</desc>
+                        <valItem ident="abb">
+                            <gloss versionDate="2022-05-31" xml:lang="en">abbreviated</gloss>
+                            <gloss versionDate="2022-05-31" xml:lang="de">abgekürzt</gloss>
+                            <desc versionDate="2022-05-31" xml:lang="en">the name component is given in an abbreviated form.</desc>
+                            <desc versionDate="2022-05-31" xml:lang="de">der Name ist in abgekürzter Form angegeben.</desc>
                         </valItem>
                     </valList>
                 </attDef>
+                <attRef class="att.global" name="xml:id"/>
+                <attRef class="att.global.responsibility" name="cert"/>
             </attList>
         </elementSpec>
         
@@ -1428,7 +1582,7 @@
             <gloss versionDate="2013-11-11" xml:lang="en">highlighted</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made.</desc>
             <gloss versionDate="2013-11-11" xml:lang="de">hervorgehoben</gloss>
-            <desc versionDate="2013-11-11" xml:lang="de">markiert ein Wort oder eine Phrase als grafisch deutlich vom umgebenden Text abgehoben, aus Gründen über die keine Angaben gemacht werden können.</desc>
+            <desc versionDate="2013-11-11" xml:lang="de">markiert ein Wort oder eine Phrase als grafisch vom umgebenden Text abgehoben.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.wega.rend" mode="add"/>
@@ -1622,7 +1776,7 @@
             </classes>
             <constraintSpec scheme="schematron" ident="note-in-text">
                 <constraint>
-                    <sch:rule context="tei:note[not(parent::tei:org or parent::tei:person or parent::tei:notesStmt or parent::tei:biblStruct or parent::tei:imprint)]">
+                    <sch:rule context="tei:note[not(parent::tei:org or parent::tei:person or parent::tei:notesStmt or parent::tei:biblStruct or parent::tei:imprint or parent::tei:place)]">
                         <sch:assert test="@type and @resp and @xml:id">It is required to provide @type and @resp and @xml:id on note.</sch:assert>
                     </sch:rule>
                 </constraint>
@@ -1698,18 +1852,19 @@
                             <desc versionDate="2016-09-19" xml:lang="de">Stellenübergreifender Kommentar.</desc>
                         </valItem>
                         <valItem ident="summary">
-                            <!--<gloss versionDate="2016-02-09" xml:lang="en"></gloss>-->
+                            <gloss versionDate="2021-12-20" xml:lang="en">summary</gloss>
                             <desc versionDate="2016-02-09" xml:lang="en">A summary of the content of the text (only applicable in the <gi>notesStmt</gi>).</desc>
                             <gloss versionDate="2016-02-09" xml:lang="de">Zusammenfassung</gloss>
                             <desc versionDate="2016-02-09" xml:lang="de">Eine Zusammenfassung des Texts (nur anwendbar im <gi>notesStmt</gi>).</desc>
                         </valItem>
                         <valItem ident="editorial">
-                            <!--<gloss versionDate="2016-02-09" xml:lang="en"></gloss>-->
+                            <gloss versionDate="2021-12-20" xml:lang="en">general remark</gloss>
                             <desc versionDate="2016-02-09" xml:lang="en">Some general remark about the file (only applicable in the <gi>notesStmt</gi>).</desc>
                             <gloss versionDate="2016-02-09" xml:lang="de">Generalkommentar</gloss>
                             <desc versionDate="2016-02-09" xml:lang="de">Ein Generalkommentar zur vorliegenden Datei (nur anwendbar im <gi>notesStmt</gi>).</desc>
                         </valItem>
                         <valItem ident="incipit">
+                            <gloss versionDate="2021-12-20" xml:lang="en">incipit</gloss>
                             <desc versionDate="2016-04-23" xml:lang="en">The text incipit of the letter (or other piece of correspondence).</desc>
                             <gloss versionDate="2016-04-23" xml:lang="de">Incipit</gloss>
                             <desc versionDate="2016-04-23" xml:lang="de">Das Textincipit des Briefs (oder anderer Korrespondenzmaterialien)</desc>
@@ -1727,6 +1882,8 @@
                 </attDef>
 <!--                <attRef name="xmllang" class="att.global"/>-->
                 <attDef ident="target" mode="change">
+                    <gloss versionDate="2021-12-20" xml:lang="en">link targets</gloss>
+                    <desc versionDate="2021-12-20" xml:lang="en">holds the URIs (notated like "wega:A07xxxx") of the to be linked thematic commentaries (only applicable if <att>type</att>="thematicCom" is also present)</desc>
                     <gloss versionDate="2016-02-08" xml:lang="de">Verweisziele</gloss>
                     <desc versionDate="2016-02-08" xml:lang="de">Nimmt die URIs (in der Form "wega:A07xxxx") der zu verknüpfenden Themenkommentare auf (nur möglich in Verbindung mit <att>type</att>="thematicCom")</desc>
                     <datatype maxOccurs="unbounded">
@@ -1757,8 +1914,8 @@
         <elementSpec ident="del" mode="change" module="core">
             <gloss versionDate="2013-11-11" xml:lang="en">deletion</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</desc>
-            <gloss versionDate="2013-11-11" xml:lang="de">Löschung</gloss>
-            <desc versionDate="2013-11-11" xml:lang="de">enthält einen Buchstaben, ein Wort, oder eine Passage die gestrichen wurde, die als gelöscht markiert, oder auf andere Weise als überflüssig oder falsch in der Textkopie von einem Autor, Schreiber, Kommentator oder Korrektor angegeben wird</desc>
+            <gloss versionDate="2013-11-11" xml:lang="de">Streichung</gloss>
+            <desc versionDate="2013-11-11" xml:lang="de">enthält einen Buchstaben, ein Wort oder eine Passage, die gestrichen wurde, die als gelöscht markiert oder auf andere Weise als überflüssig oder falsch markiert wurde in der Textvorlage.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.transcriptional" mode="delete"/>
@@ -1800,8 +1957,8 @@
         <elementSpec ident="add" mode="change" module="core">
             <gloss versionDate="2013-11-11" xml:lang="en">addition</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">contains letters, words, or phrases inserted in the source text by an author, scribe, annotator, or corrector.</desc>
-            <gloss versionDate="2013-11-11" xml:lang="de">Ergänzung</gloss>
-            <desc versionDate="2013-11-11" xml:lang="de">enthält Buchstaben, Wörter oder Sätze im Quelltext, die von einem Autor, Schreiber, Kommentator oder Korrektor eingesetzt wurden.</desc>
+            <gloss versionDate="2013-11-11" xml:lang="de">Hinzufügung</gloss>
+            <desc versionDate="2013-11-11" xml:lang="de">enthält außerhalb des regulären Textflusses hinzugefügte Buchstaben, Wörter oder Sätze in der Textvorlage.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.transcriptional" mode="delete"/>
@@ -1844,7 +2001,7 @@
             <gloss versionDate="2013-11-11" xml:lang="en">gap</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible.</desc>
             <gloss versionDate="2013-11-11" xml:lang="de">Textlücke</gloss>
-            <desc versionDate="2013-11-11" xml:lang="de">zeigt einen Punkt auf, bei dem auf Material in einer Transkription verzichtet wurde, egal ob aus redaktionellen Gründen, die im TEI-Header als Teil der Praxis beschrieben werden, oder weil das Material unleserlich, unsichtbar oder unhörbar ist.</desc>
+            <desc versionDate="2013-11-11" xml:lang="de">zeigt einen Punkt auf, bei dem auf Material in einer Transkription verzichtet wurde, egal ob aus redaktionellen Gründen oder weil das Material unleserlich ist.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.dimensions" mode="delete"/>
@@ -1990,7 +2147,7 @@
         
         <elementSpec ident="unclear" mode="change" module="core">
             <desc versionDate="2013-11-11" xml:lang="en">contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source.</desc>
-            <desc versionDate="2013-11-11" xml:lang="de">enthält ein Wort, eine Phrase oder einen Absatz, der nicht mit Sicherheit beschrieben werden kann, da er in der Quelle unleserlich oder unhörbar ist.</desc>
+            <desc versionDate="2013-11-11" xml:lang="de">enthält ein Wort, eine Phrase oder einen Absatz, der nicht mit Sicherheit transkribiert werden kann.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.dimensions" mode="delete"/>
@@ -2115,7 +2272,7 @@
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.declaring" mode="delete"/>
             </classes>
-            <constraintSpec ident="abstractModel-structure-p" scheme="schematron" mode="change">
+            <constraintSpec ident="abstractModel-structure-p-in-ab-or-p" scheme="schematron" mode="change">
                 <constraint>
                     <report xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:tei="http://www.tei-c.org/ns/1.0" 
                         test="(ancestor::tei:p or ancestor::tei:ab) 
@@ -2144,6 +2301,28 @@
                     </report>
                 </constraint>
             </constraintSpec>
+            <constraintSpec ident="extent-within-physDesc" scheme="schematron" mode="add">
+                <constraint>
+                    <report xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:tei="http://www.tei-c.org/ns/1.0" 
+                        test="@n='extent' and not(parent::tei:physDesc)">
+                        The value 'extent' must only be used within the tei:physDesc.
+                    </report>
+                </constraint>
+            </constraintSpec>
+            <constraintSpec ident="extent-only-once" scheme="schematron" mode="add">
+                <constraint>
+                    <sch:rule context="tei:physDesc">
+                        <sch:report test="count(tei:p[@n='extent']) gt 1">There must only be one tei:p with @n='extent'</sch:report>
+                    </sch:rule>
+                </constraint>
+            </constraintSpec>
+            <constraintSpec ident="extent-regex" scheme="schematron" mode="add">
+                <constraint>
+                    <sch:rule context="tei:p[@n='extent']">
+                        <sch:assert test="matches(., '^\d+ D?Bl\. \(\d+ b\. S\.( (o|einschl)\. Adr\.)?( u\. Umschlag)?\)$')">The 'extent' must match the pattern '^\d+ D?Bl\. \(\d+ b\. S\.( (o|einschl)\. Adr\.)?( u\. Umschlag)?\)$'</sch:assert>
+                    </sch:rule>
+                </constraint>
+            </constraintSpec>
             <attList>
                 <attDef ident="n" mode="add" usage="opt">
                     <gloss versionDate="2013-11-11" xml:lang="en">number</gloss>
@@ -2154,6 +2333,10 @@
                         <valItem ident="1">
                             <desc versionDate="2013-11-11" xml:lang="en">marks the (logical) first paragraph of some division of text.</desc>
                             <desc versionDate="2013-11-11" xml:lang="de">markiert den (logischen) ersten Absatz eines Textbereichs.</desc>
+                        </valItem>
+                        <valItem ident="extent">
+                            <desc versionDate="2021-12-20" xml:lang="en">marks the paragraph describing the extent of a manuscript.</desc>
+                            <desc versionDate="2021-12-20" xml:lang="de">markiert den Absatz mit der Beschreibung des Umfangs eines Manuskripts.</desc>
                         </valItem>
                     </valList>
                 </attDef>
@@ -2230,6 +2413,7 @@
             </attList>
         </elementSpec>
         <elementSpec ident="label" mode="change" module="core">
+            <gloss versionDate="2021-12-20" xml:lang="en">label</gloss>
             <desc versionDate="2014-07-09" xml:lang="en">contains any label or heading used to identify part of a text, typically but not exclusively in a list or glossary.</desc>
             <gloss versionDate="2014-07-09" xml:lang="de">Kennzeichnung</gloss>
             <desc versionDate="2014-07-09" xml:lang="de">enthält die Definition eines Glossareintrags oder auch andere Kennzeichnungen von Textabschnitten.</desc>
@@ -2511,6 +2695,17 @@
             </attList>
         </elementSpec>
         
+        <elementSpec ident="respStmt" module="core" mode="change">
+            <content>
+                <sequence>
+                    <elementRef key="resp" minOccurs="1"
+                        maxOccurs="1"/>
+                    <classRef key="model.nameLike.agent"
+                        minOccurs="1" maxOccurs="unbounded"/>
+                </sequence>
+            </content>
+        </elementSpec>
+        
        <classSpec type="atts" ident="att.declarable" module="tei" mode="delete"/>
     </specGrp>
     
@@ -2578,8 +2773,19 @@
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.typed" mode="delete"/>
                 <memberOf key="att.datable" mode="delete"/>
-                <!--            <memberOf key="att.datable.w3c" mode="add"/>-->
             </classes>
+            <constraintSpec scheme="schematron" ident="assert-chronologic-order">
+                <constraint>
+                    <sch:rule context="tei:change[preceding::tei:change]">
+                        <sch:assert test="preceding::tei:change/string(@when) >= string(@when)">The change elements should be ordered by date descending, i.e. the latest entry should be on top.</sch:assert>
+                    </sch:rule>
+                </constraint>
+            </constraintSpec>
+            <constraintSpec scheme="schematron" ident="report-future-dates">
+                <constraint>
+                    <sch:report test="string(@when) > (current-date() cast as xs:string)">The when-attribute must not refer to a future date.</sch:report>
+                </constraint>
+            </constraintSpec>
             <attList>
                 <attDef ident="who" mode="change" usage="req">
                     <desc versionDate="2013-11-11" xml:lang="en">indicates the person, or group of people, to whom the element content is ascribed.</desc>
@@ -2588,7 +2794,23 @@
                         <rng:ref name="staffSignatures.list"/>
                     </datatype>
                 </attDef>
-                <attRef name="when" class="att.datable.w3c"/>
+                <attDef ident="when" mode="add" usage="req">
+                    <desc versionDate="2022-09-19" xml:lang="en">supplies the value of the date in the form yyyy-mm-dd.</desc>
+                    <desc versionDate="2022-09-19" xml:lang="de">gibt das Datum in der Form yyyy-mm-dd an.</desc>
+                    <datatype>
+                        <!--
+                            There are some values of "2006" in the writings so we can't 
+                            set this to xs:date here but also need gYear
+                        -->
+                        <dataRef key="wega.data.temporal.iso"/>
+                    </datatype>
+                    <remarks versionDate="2022-09-19" xml:lang="en">
+                        <p>For historic reasons gYear (i.e. only providing the year) is also allowed. For new entries this must be avoided.</p>
+                    </remarks>
+                    <remarks versionDate="2022-09-19" xml:lang="de">
+                        <p>Aus historischen Gründen ist der Datentyp gYear (d.h. nur die Angabe des Jahrs) ebenfalls erlaubt. Dies ist bei neuen Einträge aber zu vermeiden.</p>
+                    </remarks>
+                </attDef>
                 <attDef ident="calendar" mode="delete"/>
                 <attDef ident="target" mode="delete"/>
             </attList>
@@ -2661,6 +2883,21 @@
                     <rng:ref name="change"/>
                 </rng:oneOrMore>
             </content>
+            <constraintSpec scheme="schematron" ident="assert-status-alignment">
+                <constraint>
+                    <!--
+                        This is to assert that the last provided change entry with a status change matches the document status given on revisionDesc.
+                        I'd like to see that every status change be documented by a change entry, but currently we cannot enforce this in the schema
+                        since the data is lacking this information in many files. We'd need to dig this information up from the Subversion – which is
+                        some work …
+                        So, the envisioned approach is to get rid of the `<sch:rule context="">`, which would then enforce a corresponding status 
+                        attribute (to the status attribute on revisionDesc) on some change element.
+                    -->
+                    <sch:rule context="tei:revisionDesc[tei:change/@status]">
+                        <sch:assert test="@status eq (tei:change/@status)[1]">The value of the status-attribute on <sch:name/> should be in congruence with the latest status value on a change child element.</sch:assert>
+                    </sch:rule>
+                </constraint>
+            </constraintSpec>
             <attList>
                 <attDef ident="status" usage="req" mode="change"/>
             </attList>
@@ -2822,7 +3059,11 @@
                         </egXML>
                     </exemplum>
                 </attDef>
-                
+                <attDef ident="key" mode="add" usage="rec">
+                    <datatype>
+                        <dataRef key="wega.places.pointer"/>
+                    </datatype>
+                </attDef>
                 <attDef ident="subtype" mode="delete"/>
             </attList>
             
@@ -2970,7 +3211,7 @@
                     </sch:rule>
                 </constraint>
             </constraintSpec>
-            <constraintSpec scheme="schematron" ident="parent-org-reg">
+            <constraintSpec scheme="schematron" ident="parent-org-reg2">
                 <constraint>
                     <sch:rule context="tei:orgName[parent::tei:org and preceding::tei:orgName]">
                         <sch:report test="@type='reg'">Only the first name can be of @type='reg'. Following names are supposed to be alternative names, @type='alt'.</sch:report>
@@ -3235,7 +3476,7 @@
         
         <elementSpec ident="space" mode="change" module="transcr">
             <desc versionDate="2013-11-11" xml:lang="en">indicates the location of a significant space in the copy text.</desc>
-            <desc versionDate="2018-11-27" xml:lang="de">markiert signifikanten Leerraum in der Textkopie.</desc>
+            <desc versionDate="2018-11-27" xml:lang="de">markiert signifikanten Leerraum in der Textvorlage.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.dimensions" mode="delete"/>
@@ -3270,7 +3511,7 @@
             <gloss versionDate="2013-11-11" xml:lang="en">substitution</gloss>
             <desc versionDate="2013-11-11" xml:lang="en">groups one or more deletions with one or more additions when the combination is to be regarded as a single intervention in the text.</desc>
             <gloss versionDate="2013-11-11" xml:lang="de">Ersetzung</gloss>
-            <desc versionDate="2013-11-11" xml:lang="de">gruppiert eine oder mehrere Löschungen mit einem oder mehreren Zusätzen, wenn die Kombination als ein einziger Eingriff in den Text betrachtet werden kann.</desc>
+            <desc versionDate="2013-11-11" xml:lang="de">gruppiert ein oder mehrere <gi>del</gi> (Streichung) mit einem oder mehreren <gi>add</gi> (Hinzufügung), wenn die Kombination als ein einziger Eingriff in den Text betrachtet werden kann.</desc>
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
                 <memberOf key="att.dimensions" mode="delete"/>
@@ -3747,11 +3988,6 @@
             <classes mode="change">
                 <memberOf key="att.global" mode="delete"/>
             </classes>
-            <constraintSpec scheme="schematron" ident="empty-physDesc">
-                <constraint>
-                    <sch:assert test="*"><sch:name/> must contain at least one p or accMat element</sch:assert>
-                </constraint>
-            </constraintSpec>
             <content>
                 <sequence>
                     <classRef key="model.pLike" minOccurs="0"
@@ -3760,6 +3996,11 @@
                         maxOccurs="unbounded"/>
                 </sequence>
             </content>
+            <constraintSpec scheme="schematron" ident="empty-physDesc">
+                <constraint>
+                    <sch:assert test="*"><sch:name/> must contain at least one p or accMat element</sch:assert>
+                </constraint>
+            </constraintSpec>
         </elementSpec>
         
         <elementSpec ident="history" mode="change" module="msdescription">
@@ -3838,6 +4079,7 @@
             </attList>
         </elementSpec>
         <elementSpec ident="table" mode="change" module="figures">
+            <gloss versionDate="2021-12-20" xml:lang="en">table</gloss>
             <desc versionDate="2014-07-09" xml:lang="en">contains text displayed in tabular form, in rows and columns</desc>
             <gloss versionDate="2014-07-09" xml:lang="de">Tabelle</gloss>
             <desc versionDate="2014-07-09" xml:lang="de">enthält Text in Tabellenform, d.h. in Zeilen und Spalten.</desc>
@@ -3880,6 +4122,7 @@
             </attList>
         </elementSpec>
         <elementSpec ident="row" mode="change" module="figures">
+            <gloss versionDate="2021-12-20" xml:lang="en">row</gloss>
             <desc versionDate="2014-07-09" xml:lang="en">contains one row of a table</desc>
             <gloss versionDate="2014-07-09" xml:lang="de">Tabellenzeile</gloss>
             <desc versionDate="2014-07-09" xml:lang="de">enthält eine Zeile einer Tabelle.</desc>
@@ -3918,6 +4161,7 @@
             </attList>
         </elementSpec>
         <elementSpec ident="cell" mode="change" module="figures">
+            <gloss versionDate="2021-12-20" xml:lang="en">cell</gloss>
             <desc versionDate="2014-07-09" xml:lang="en">contains one cell of a table</desc>
             <gloss versionDate="2014-07-09" xml:lang="de">Tabellenzelle</gloss>
             <desc versionDate="2014-07-09" xml:lang="de">enthält eine Zelle einer Tabelle.</desc>
@@ -3992,6 +4236,7 @@
                     <rng:ref name="viaf.pattern"/>
                     <rng:ref name="bd.pattern"/>
                     <rng:ref name="geonames.pattern"/>
+                    <rng:ref name="geonames.pattern"/>
                 </rng:choice>
             </content>
             <constraintSpec scheme="schematron" ident="types-match-external-identifiers">
@@ -4006,6 +4251,12 @@
                     </sch:rule>
                     <sch:rule context="tei:idno[@type='geonames']">
                         <sch:assert test="matches(., '^[1-9][0-9]{0,8}$')">That doesn't look like a valid Geonames ID.</sch:assert>
+                    </sch:rule>
+                    <sch:rule context="tei:idno[@type='bd']">
+                        <sch:assert test="matches(., '^BachDigitalPerson_agent')">That doesn't look like a valid Bach Digital ID.</sch:assert>
+                    </sch:rule>
+                    <sch:rule context="tei:idno[@type='wikidata']">
+                        <sch:assert test="matches(., '^Q[1-9]\d*$')">That doesn't look like a valid Wikidata ID.</sch:assert>
                     </sch:rule>
                 </constraint>
             </constraintSpec>
@@ -4041,6 +4292,10 @@
                         <valItem ident="geonames">
                             <desc versionDate="2014-01-08" xml:lang="en">ID taken from http://www.geonames.org/</desc>
                             <desc versionDate="2014-01-08" xml:lang="de">ID von http://www.geonames.org/</desc>
+                        </valItem>
+                        <valItem ident="wikidata">
+                            <desc versionDate="2022-03-01" xml:lang="en">Wikidata Q identifier</desc>
+                            <desc versionDate="2022-03-01" xml:lang="de">Wikidata Q identifier</desc>
                         </valItem>
                         <!--<valItem ident="getty">
                             <desc versionDate="2014-01-08" xml:lang="en">ID taken from http://www.getty.edu/research/tools/vocabularies/tgn/</desc>

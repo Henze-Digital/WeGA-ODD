@@ -7,7 +7,7 @@
     exclude-result-prefixes="xs wega"
     version="2.0">
     
-    <xsl:param name="current-tei-version" as="xs:string">4.3.0</xsl:param>
+    <xsl:param name="current-tei-version" as="xs:string">4.5.0</xsl:param>
     <xsl:param name="facsimileWhiteList" as="xs:string">D-B</xsl:param>
     
     <xsl:output media-type="application/tei+xml" encoding="UTF-8" indent="no" method="xml"/>
@@ -555,7 +555,9 @@
                 <xsl:when test="matches(., 'wega:')">
                     <xsl:value-of select="replace(., 'wega:', 'https://weber-gesamtausgabe.de/Scaler/IIIF/')"/>
                 </xsl:when>
-                <xsl:when test="starts-with(., 'http')"/>
+                <xsl:when test="starts-with(., 'http')">
+                    <xsl:value-of select="."/>
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:variable name="curID" select="root()/*/data(@xml:id)"/>
                     <xsl:variable name="docType" select="wega:docType($curID)"/>
@@ -567,6 +569,7 @@
     </xsl:template>
     
     <xsl:template match="@notInvolved" mode="#all"/>
+    <xsl:template match="@full[parent::author]" mode="#all"/>
     <xsl:template match="keywords[parent::biblStruct]" mode="#all"/>
     
     <xsl:template name="inject-schema-references">
